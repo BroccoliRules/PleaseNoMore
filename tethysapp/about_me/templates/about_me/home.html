@@ -1,0 +1,59 @@
+{% extends "about_me/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+  <h1>Alexander J White</h1>
+    <p>
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Parents.jpg" width="150" height="70">
+    </p>
+    <p>A biproduct from the marriage of James and Tamara White, Alex was born in Preston Idaho on January 12, 1994.</p>
+    <p>Although not popular enough to be featured in the popular film Napolean Dynamite, Alex has still done many interesting things in his 26 years of life.</p>
+  <h2>High School</h2>
+    <p>Alex graduated in 2012.  He not only was active in playing soccer and lacrosse, but also started a ping pong club at his school.</p>
+  <h2>BYU</h2>
+    <p>Despite everyone telling him that Utah State was the place to be, Alex decided to go to BYU. <br>
+       He started out studying Computer Science but quickly found that coding wasn't his thing. <br>
+       Soon enough, he came to the light side and will graduate in Civil Engineering this April 2020. <br>
+       He will graduate a single man, to his mother's despair.  How ever will he find a good Mormon girl now....
+    </p>
+  <h2>Miscellaneous</h2>
+    <p>
+      Alex enjoys many things.  A major hobby in his life has been motorcycle riding.<br>
+      Since he had his drivers license he has ridden motorcycles. <br>
+      Currently he rides a Kawasaki Z1000. <br>
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Bike1.jpg" width="150" height="70">
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Bike2.jpg" width="150" height="70">
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Bike3.jpg" width="150" height="70">
+   </p>
+   <p>
+      Alex also is active in other groupls like the Timpanogos Caving Grotto. <br>
+      He has been able to see a lot of Utah caves with their help. <br>
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Caving2.jpg" width="150" height="70"> <br>
+      Alex also likes to be outside exploring.  He recently went to all 5 National Parks in Southern Utah. <br>
+      His power rankings, 1 being his favorite, are as follows: <br>
+      1. Arches <br>
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Arches2.jpg" width="150" height="75"> <br>
+      2. Zion <br>
+      <img src="https://github.com/BroccoliRules/about/blob/master/tethysapp/about/public/images/Angels.jpg" width="150" height="75"> <br>
+      3. Capital Reef <br>
+      4. Canyonlands <br>
+      5. Bryce <br>
+      <br>
+      Alex also enjoys rock climbing, bouldering, music, movies, architecture, art, video games, seeing new places, and annoying people.
+   </p>
+{% endblock %}
+
+
+{% block app_actions %}
+  {% gizmo save_button %}
+  {% gizmo edit_button %}
+  {% gizmo remove_button %}
+  {% gizmo previous_button %}
+  {% gizmo next_button %}
+{% endblock %}
